@@ -74,5 +74,10 @@ A testbench that:
 
 ```bash
 iverilog -o uart_tx.vvp uart_tx.sv uart_tx_tb.sv
+3. Run the Simulation
+vvp uart_tx.vvp
+4. Open the Waveform in GTKWave
+gtkwave uart_tx.vcd
+You should see the serial output waveform for the transmitted byte (e.g., 0x55).
 
 
